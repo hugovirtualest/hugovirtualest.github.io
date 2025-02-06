@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css">
     <title>VirtualEst</title>
     <style>
         * {
@@ -77,11 +78,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 20px; /* Espacio entre nav y contenido */
+            margin-top: 20px;
+            /* Espacio entre nav y contenido */
         }
 
         .content {
-            max-width: 600px;
             width: 90%;
             text-align: center;
             line-height: 1.6;
@@ -127,14 +128,16 @@
 
 <body>
     <header>
-        <h1>VirtualEst</h1>
+        <h1><a href="/index.html" title="Ir a la página principal">VirtualEst</a></h1>
     </header>
 
     <div class="main-content">
         <nav>
-            <div class="nav-item" onclick="showContent('rrss')">RRSS</div>
-            <div class="nav-item" onclick="showContent('about')">Quiénes somos</div>
-            <div class="nav-item" onclick="showContent('contact')">Contacto</div>
+            <div class="nav-item" onclick="showContent('rrss')" aria-expanded="false" aria-controls="rrss">RRSS</div>
+            <div class="nav-item" onclick="showContent('about')" aria-expanded="false" aria-controls="about">Quiénes
+                somos</div>
+            <div class="nav-item" onclick="showContent('contact')" aria-expanded="false" aria-controls="contact">
+                Contacto</div>
         </nav>
 
         <div class="content-container">
@@ -143,9 +146,18 @@
             </div>
 
             <div id="about" class="content">
-                <p>💎 Enseño cómo es el sector de lujo #realestate por dentro.<br><br>
-                    🤝 Para todos los públicos<br><br>
-                    🤖 IA y 3D para revolucionar el mercado</p>
+                <p>
+                    En un mundo donde la primera impresión ocurre en el mundo digital, VirtualEst nació con un propósito
+                    claro: revolucionar la presencia online del sector inmobiliario.<br><br>
+                    Todo comenzó con Hugo Santamaría, un visionario que entendió que el futuro del sector no solo estaba
+                    en las calles, sino también en las pantallas. Detectó una necesidad urgente: muchas empresas
+                    inmobiliarias contaban con grandes proyectos, pero su huella digital era casi inexistente. Así,
+                    decidió crear una solución integral que combinara branding, redes sociales, marketing digital,
+                    audiovisual, páginas web, IA y 3D para dar vida a cada propiedad antes de ser visitada.<br><br>
+                    Hoy, en VirtualEst, ayudamos a inmobiliarias, promotoras y agentes a destacar en un mercado cada vez
+                    más competitivo, creando experiencias digitales impactantes que generan confianza y convierten
+                    visitantes en clientes.<br><br>
+                    Si el mundo digital es el nuevo escaparate, nosotros te ayudamos a construir el mejor de todos.</p>
             </div>
 
             <div id="contact" class="content">
